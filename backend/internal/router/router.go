@@ -10,5 +10,5 @@ func NewRouter() *echo.Echo {
 			"message": "ok",
 		})
 	})
-	return e
+	return e //e.GETでルート設定済みのeを返しているのと最初のecho.New()
 }
