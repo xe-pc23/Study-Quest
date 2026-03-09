@@ -1,0 +1,17 @@
+{
+  "name": "study-quest-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.29.3",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "15.2.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  }
+}
