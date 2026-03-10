@@ -13,7 +13,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
+	//modelのtask構造体をテーブルにする
 	if err := db.AutoMigrate(&model.Task{}); err != nil {
 		log.Fatal(err)
 	}

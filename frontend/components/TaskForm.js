@@ -13,7 +13,7 @@ export default function TaskForm({ mode = "create" }) {
               className="text-input"
               type="text"
               placeholder="例: Echo で CRUD API を作る"
-              defaultValue={isEdit ? "Echo で CRUD API を作る" : ""}
+              defaultValue=""
             />
           </div>
 
@@ -24,13 +24,13 @@ export default function TaskForm({ mode = "create" }) {
               className="text-area"
               rows="6"
               placeholder="何を学ぶタスクなのか、どこまで実装するのかを記録する"
-              defaultValue={isEdit ? "一覧取得、詳細取得、作成、更新、削除までを段階的に実装する。" : ""}
+              defaultValue=""
             />
           </div>
 
           <div className="field-group">
             <label className="field-label" htmlFor="status">ステータス</label>
-            <select id="status" className="select-input" defaultValue={isEdit ? "doing" : "todo"}>
+            <select id="status" className="select-input" defaultValue="todo">
               <option value="todo">未着手</option>
               <option value="doing">進行中</option>
               <option value="done">完了</option>
@@ -39,7 +39,7 @@ export default function TaskForm({ mode = "create" }) {
 
           <div className="field-group">
             <label className="field-label" htmlFor="category">カテゴリ</label>
-            <select id="category" className="select-input" defaultValue={isEdit ? "Web" : "Go基礎"}>
+            <select id="category" className="select-input" defaultValue="Go基礎">
               <option>Go基礎</option>
               <option>Web</option>
               <option>DB</option>
@@ -64,7 +64,7 @@ export default function TaskForm({ mode = "create" }) {
               className="text-input"
               type="number"
               placeholder="60"
-              defaultValue={isEdit ? "90" : ""}
+              defaultValue=""
             />
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function TaskForm({ mode = "create" }) {
               className="text-area"
               rows="5"
               placeholder="詰まったこと、次に試すこと、理解したことをメモする"
-              defaultValue={isEdit ? "まずは一覧取得 API を終わらせてから、作成 API に進む。" : ""}
+              defaultValue=""
             />
           </div>
 
